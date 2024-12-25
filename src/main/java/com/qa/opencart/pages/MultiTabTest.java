@@ -17,7 +17,8 @@ public class MultiTabTest {
             // page.locator("a:has-text('Open New Seperate Windows')").click();
             //*[@id="Seperate"]/button
             // Wait for the button to appear and click it to open a new window
-            Locator newWindowButton = page.locator("a:has-text('Open New Tabbed Windows')");
+            //
+            Locator newWindowButton = page.locator("//a[text()='Open New Tabbed Windows ']");
             newWindowButton.click();
             try {
                 Thread.sleep(4000);

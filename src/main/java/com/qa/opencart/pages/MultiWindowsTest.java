@@ -15,7 +15,7 @@ public class MultiWindowsTest {
            // page.locator("a:has-text('Open New Seperate Windows')").click();
             //*[@id="Seperate"]/button
             // Wait for the button to appear and click it to open a new window
-            Locator newWindowButton = page.locator("a:has-text('Open New Seperate Windows')");
+            Locator newWindowButton = page.locator("//a[text()='Open New Seperate Windows']");
             newWindowButton.click();
             try {
                 Thread.sleep(4000);

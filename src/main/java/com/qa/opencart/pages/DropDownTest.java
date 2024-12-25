@@ -12,7 +12,7 @@ public class DropDownTest {
             page.navigate("https://practice.expandtesting.com/dropdown");
 
             // Wait for the dropdown to appear
-            Locator dropdown = page.locator("select#dropdown");
+            Locator dropdown = page.locator("//*[@id=\"dropdown\"]");
 
             // Select an option by value
             dropdown.selectOption("2");
@@ -29,7 +29,7 @@ public class DropDownTest {
             } else {
                 System.out.println("Selection verification failed.");
             }
-            Locator dropdown2 = page.locator("select#elementsPerPageSelect");
+            Locator dropdown2 = page.locator("//*[@id=\"elementsPerPageSelect\"]");
 
             // Select an option by value
             dropdown2.selectOption("20");
@@ -48,7 +48,7 @@ public class DropDownTest {
             }
             // Close the browser
 
-            Locator dropdown3 = page.locator("select#country");
+            Locator dropdown3 = page.locator("//*[@id=\"country\"]");
 
             // Select an option by value
             dropdown3.selectOption("BD");
