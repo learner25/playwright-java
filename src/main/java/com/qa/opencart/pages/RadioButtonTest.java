@@ -12,7 +12,7 @@ public class RadioButtonTest {
             page.navigate("https://practice.expandtesting.com/radio-buttons");
 
             // Select a radio button by value
-            Locator radioButton = page.locator("input[type='radio'][value='blue']");
+            Locator radioButton = page.locator("//*[@id=\"black\"]");
             //radioButton.check();
             // Check if the radio button is visible and not already selected
             if (radioButton.isVisible() && !radioButton.isChecked()) {
@@ -31,7 +31,7 @@ public class RadioButtonTest {
                 e.printStackTrace();
             }
 
-            Locator anotherRadioButton = page.locator("input[type='radio'][value='football']");
+            Locator anotherRadioButton = page.locator("//*[@id=\"football\"]");
             anotherRadioButton.check();
             System.out.println("Radio button 'Option 2' is selected.");
             try {
